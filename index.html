@@ -4,7 +4,6 @@
     <title>A Gentle Guide to the Grammar of Graphics with ggplot2</title>
     <meta charset="utf-8">
     <meta name="author" content="Garrick Aden-Buie @grrrck" />
-    <meta name="date" content="2018-01-23" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
     <link href="libs/remark-css/metropolis-fonts.css" rel="stylesheet" />
@@ -17,7 +16,7 @@ class: center, middle, inverse, title-slide
 # A Gentle Guide to the Grammar of Graphics<br>with <code>ggplot2</code>
 ## Tampa R Users Meetup
 ### Garrick Aden-Buie<br><span class="citation">@grrrck</span>
-### 2018-01-23
+### 2018-01-23<br><br>Follow along: <strong>bit.ly/trug-ggplot2</strong>
 
 ---
 
@@ -61,6 +60,24 @@ The transferrable skills from ggplot2 are not the idiosyncracies of plotting syn
 - Easy to .hl[iterate]
 
 - Easy to be .hl[consistent]
+
+---
+layout: false
+
+# What are we getting into?
+
+`ggplot2` is a huge package: philosophy + functions
+&lt;br&gt;...but it's very well organized
+
+--
+
+*Lots* of examples of not-so-great plots in these slides
+&lt;br&gt;...but that's okay
+
+--
+
+Going to throw a lot at you
+&lt;br&gt;...but you'll know *where* and *what* to look for
 
 --
 
@@ -2078,45 +2095,45 @@ The [babynames package](https://github.com/hadley/babynames) contains data provi
  &lt;/thead&gt;
 &lt;tbody&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1930 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1894 &lt;/td&gt;
    &lt;td style="text-align:left;"&gt; F &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Anselma &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 2006 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; M &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Babacar &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1998 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; F &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Damilola &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1933 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; F &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Jacqueline &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 2756 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.003 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1930 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; F &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Iva &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 605 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Tillie &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 198 &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 0.001 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 2015 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2010 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; M &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Riel &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 2008 &lt;/td&gt;
    &lt;td style="text-align:left;"&gt; F &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Shayleen &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 8 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Rosario &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 137 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 1994 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; M &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Naheem &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 1970 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; F &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Vivienne &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 16 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 1883 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; F &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Elvie &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -2376,64 +2393,64 @@ Data-preprocessing:
  &lt;/thead&gt;
 &lt;tbody&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1908 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Madison &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -0.00007 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1926 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Frankie &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.00029 &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1910 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Jean &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.00276 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1925 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Ashley &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -0.00005 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1935 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Artie &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1946 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Vinnie &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 0.00003 &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1961 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Artie &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -0.00003 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1977 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Aubrey &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.00010 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1960 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Donnie &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.00069 &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1983 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Jean &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.00014 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1967 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Allison &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.00083 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 1978 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Vinnie &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.00000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 1978 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Cruz &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.00005 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 17 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 1982 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Allison &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.00284 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:right;"&gt; 1994 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Madison &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.00310 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Allison &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.00418 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1996 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Ashley &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.01230 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2005 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Ollie &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.00001 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 2013 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Donnie &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -0.00005 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2014 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Lou &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.00000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 12 &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
