@@ -122,7 +122,7 @@ library(tidyverse)
 ```
 
 ```
-## ── Attaching packages ───────────────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──
+## ── Attaching packages ────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──
 ```
 
 ```
@@ -133,7 +133,7 @@ library(tidyverse)
 ```
 
 ```
-## ── Conflicts ──────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+## ── Conflicts ───────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
 ## ✖ dplyr::filter() masks stats::filter()
 ## ✖ dplyr::lag()    masks stats::lag()
 ```
@@ -1951,7 +1951,7 @@ ggplot(tips) +
 ggplot(tips) +
   aes(x = day,
       y = percent,
-      color = smoker) +
+      color = sex) +
   geom_jitter(width = 0.25) +
 * facet_grid(time ~ smoker) 
 ```
@@ -1977,7 +1977,7 @@ tips &lt;- mutate(tips,
 ggplot(tips) +
   aes(x = day,
       y = percent,
-      color = smoker) +
+      color = sex) +
   geom_jitter(width = 0.25) +
   facet_grid(time ~ smoker)
 ```
@@ -2095,46 +2095,46 @@ The [babynames package](https://github.com/hadley/babynames) contains data provi
  &lt;/thead&gt;
 &lt;tbody&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1894 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; F &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Tillie &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 198 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.001 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 2010 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2002 &lt;/td&gt;
    &lt;td style="text-align:left;"&gt; M &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Riel &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 2008 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; F &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Rosario &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 137 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1994 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; M &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Naheem &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1970 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; F &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Vivienne &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 16 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1883 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; F &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Elvie &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Klark &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 1917 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; M &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Prince &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 86 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 2003 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; M &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Dayveon &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 25 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 1974 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; F &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Joddie &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 1951 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; F &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Gigi &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 33 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 1904 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; F &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Laverna &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 9 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -2393,64 +2393,64 @@ Data-preprocessing:
  &lt;/thead&gt;
 &lt;tbody&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1926 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Frankie &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.00029 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1883 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Vinnie &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.00021 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 1916 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Ollie &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.00053 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 1922 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Vinnie &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.00004 &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:right;"&gt; 1946 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Vinnie &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.00003 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Madison &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.00003 &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1960 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Donnie &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -0.00069 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1957 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Cruz &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.00001 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 17 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 1959 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Jean &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.00293 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:right;"&gt; 1967 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Allison &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.00083 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Addison &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.00001 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1978 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Vinnie &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.00000 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1973 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Lue &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.00001 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1978 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1985 &lt;/td&gt;
    &lt;td style="text-align:left;"&gt; Cruz &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; -0.00005 &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 17 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1982 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Allison &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.00284 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1994 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Allison &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.00418 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 2005 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2003 &lt;/td&gt;
    &lt;td style="text-align:left;"&gt; Ollie &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; -0.00001 &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 2014 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Lou &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.00000 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 12 &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
