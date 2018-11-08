@@ -1,5 +1,7 @@
 # A Gentle Guide to the Grammar of Graphics with `ggplot2`
 
+#### UPDATE: An updated version of these slides are available at <https://github.com/gadenbuie/gentle-ggplot2>.
+
 These are the slides and repo for my talk at the Tampa R Users Meetup on January 23, 2018.
 
 The slides are available here: <https://gadenbuie.github.io/trug-ggplot2>
